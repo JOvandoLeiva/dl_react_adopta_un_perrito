@@ -13,10 +13,7 @@ const Tarjeta = ({url,name,description,texto,fondo}) => {
                     <Card.Text className='m-2'>
                         {description}
                      </Card.Text>
-                <Button>
                 <Tag texto={texto} fondo ={fondo} />
-                </Button>
-                
              </Card.Body>
          </Card>
 

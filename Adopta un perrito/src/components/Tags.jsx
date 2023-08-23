@@ -1,15 +1,11 @@
 import { Badge } from "react-bootstrap";
-import Card from './Card';
 
-const Tag = ({texto,fondo}) => {
-
+const Tag = ({ texto, fondo }) => {
     return(
-
         <div>
-            <span className= {"badge badge-pill badge-" +fondo}>{texto}</span>
-          
+            <Badge bg={fondo}>{texto}</Badge>
         </div>
-    )
+    );
 };
 
 export default Tag;
