@@ -2,12 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Tag from './Tags';
 
-var tag = function(textito, fondo){
-    this.textito = textito; 
-    this.fondo = fondo
-  }
-
-const Tarjeta = ({url,name,description,tag}) => {
+const Tarjeta = ({url,name,description,texto,fondo}) => {
     return(
 
         <div className='m-2'>
@@ -18,7 +13,10 @@ const Tarjeta = ({url,name,description,tag}) => {
                     <Card.Text className='m-2'>
                         {description}
                      </Card.Text>
-                <Button variant="primary"><Tag /></Button>
+                <Button>
+                <Tag texto={texto} fondo ={fondo} />
+                </Button>
+                
              </Card.Body>
          </Card>
 
